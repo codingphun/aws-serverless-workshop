@@ -28,6 +28,7 @@ This workshop can be deployed in any AWS region that supports the following serv
 - AWS CodeStar
 - AWS Lambda
 - AWS X-Ray
+- AWS Cloud9
 
 This workshop is available in the **Ireland** and **Sydney** regions.
 
@@ -72,9 +73,13 @@ Once you've chosen a region, you should deploy all of the resources for this wor
 
     ![CodeStar 6](images/codestar-6.png)
 
-1. The next screen asks how you will edit your project code.  You will use AWS Cloud 9 as the default editor.
+1. The next screen asks how you will edit your project code.  You will use AWS Cloud9 as the default IDE.
 
     ![CodeStar 7](images/codestar-7.png)
+
+1. Leave everything default and click **Next**.
+
+    ![CodeStar 7](images/codestar-7b.png)
 
 1. The screen below is your CodeStar project dashboard.  After creating a new project, there will be a short delay as CodeStar provisions the resources for CodeCommit, CodeBuild, CodePipeline, and additional resources related to your project template, Lambda functions in this case.  When the progress bar in the upper right of the browser window reaches 100% complete, the provisioning phase of project creation is complete.
 
@@ -97,14 +102,14 @@ Once you've chosen a region, you should deploy all of the resources for this wor
 </p></details>
 <p>
 
-Congratulations!  You have successfully create a serverless web service project using CodeStar.  In the next section, you will use a Git client to clone the repository to your workstation.
+Congratulations!  You have successfully create a serverless web service project using CodeStar.  In the next section, you will learn how to launch AWS Cloud9 IDE.
 
-## Clone CodeCommit Git Repository
+## Launch AWS Cloud9 IDE
 
-**Goal:** From the CodeStar dashboard for the `uni-api` project, find the CodeCommit instructions to clone the Git repository to your local workstation.
+**Goal:** From the CodeStar dashboard for the `uni-api` project, lauch AWS Cloud9 IDE.
 
 <details>
-<summary><strong>HOW TO clone the CodeCommit git repository (expand for details)</strong></summary><p>
+<summary><strong>HOW TO AWS Cloud9 IDE from CodeStar (expand for details)</strong></summary><p>
 
 1. In the upper right corner of the CodeStar project dashboard browser window, click the **Connect Tools** button.
 

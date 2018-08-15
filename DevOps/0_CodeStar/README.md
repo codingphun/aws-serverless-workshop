@@ -72,7 +72,7 @@ Once you've chosen a region, you should deploy all of the resources for this wor
 
     ![CodeStar 6](images/codestar-6.png)
 
-1. The next screen asks how you will edit your project code.  You will come back to this configuration later in this module and can click the **Skip** button in the lower right corner of the browser window to proceed.
+1. The next screen asks how you will edit your project code.  You will use AWS Cloud 9 as the default editor.
 
     ![CodeStar 7](images/codestar-7.png)
 

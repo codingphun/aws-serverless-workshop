@@ -106,27 +106,23 @@ Congratulations!  You have successfully create a serverless web service project 
 
 ## Launch AWS Cloud9 IDE
 
-**Goal:** From the CodeStar dashboard for the `uni-api` project, lauch AWS Cloud9 IDE.
+**Goal:** From the CodeStar dashboard for the `uni-api` project, launch AWS Cloud9 IDE.
 
 <details>
-<summary><strong>HOW TO AWS Cloud9 IDE from CodeStar (expand for details)</strong></summary><p>
+<summary><strong>How to Launch AWS Cloud9 IDE from CodeStar (expand for details)</strong></summary><p>
 
-1. In the upper right corner of the CodeStar project dashboard browser window, click the **Connect Tools** button.
+1. In the upper right corner of the CodeStar project dashboard browser window, click the **Start coding** button.
 
     ![CodeStar 11](images/codestar-11.png)
     
-    You can also click the **Connect** button in the bottom left corner of the **Commit history** project tile.
-    
-    ![CodeStar 11](images/codestar-11b.png)
-    
-1. You can select instructions to clone the CodeCommit respository using **Visual Studio**, **Eclipse**, or **Command line tools**.  Click **See instructions** for instructions for cloning to **macOS**, **Windows**, and **Linux** operating systems.  Complete the instructions to clone the CodeCommit Git repository to your local workstation.
+1. This will launch Cloud9 IDE in a new tab.
 
     ![CodeStar 12](images/codestar-12.png)
 
 </p></details>
 <p>
 
-Congratulations!  You have successfully cloned the `uni-api` project to your local workstation.  In future modules, you will use this local version to commit changes to the source code, push them to the project Git repository, and trigger automatic execution of the project's continuous delivery pipeline.
+Congratulations!  You have successfully launched the `uni-api` project to your Cloud9 IDE.  In future modules, you will use this IDE to commit changes to the source code, push them to the project Git repository, and trigger automatic execution of the project's continuous delivery pipeline.
 
 
 

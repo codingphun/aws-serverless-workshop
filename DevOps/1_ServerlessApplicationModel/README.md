@@ -160,7 +160,7 @@ We also release the CLI as binaries that you can download and instantly use. You
 
 <details>
 <summary><strong>
-#### Alternative Installation: Amazon Linux (EC2) (expand for details)
+Alternative Installation: Amazon Linux (EC2) (expand for details)
 </strong></summary>
 
 If you're unable to install SAM Local on your workstation, you may find it easier to use SAM Local on an Amazon Linux EC2 instance.   In this case, you will not be performing work locally on your laptop, instead you will connect remotely into an EC2 instance to perform editing and testing.

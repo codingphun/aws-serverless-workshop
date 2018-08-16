@@ -116,7 +116,7 @@ git fetch --all
 git reset --hard origin/master
 ```
 
-    ![CloudFormation Stack Creation Complete](images/seed-repository-2b.png)
+  ![CloudFormation Stack Creation Complete](images/seed-repository-2b.png)
 
 ## SAM Local
 

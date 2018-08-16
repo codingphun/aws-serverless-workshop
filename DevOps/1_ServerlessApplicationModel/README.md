@@ -109,7 +109,7 @@ If you're using the latest version of the Chrome, Firefox, or Safari web browser
 
 Now that the CodeCommit Git repository has been seeded with new source code, you will need to fetch the changes locally on to Cloud9 IDE so that you may modify the code.  Typically, this is accomplished using the `git pull` command, however for the workshop we have replaced the repository with a new history and different Git commands will be used.
 
-In Cloud9 IDE, run the commands on your local `uni-api` Git repository in the bash terminal window at the bottom:
+In Cloud9 IDE, run the commands on your local `uni-api` Git repository in the bash terminal window at the bottom of the IDE window:
 
 ```bash
 git fetch --all
@@ -136,7 +136,7 @@ Running Serverless projects and functions locally with SAM Local requires Docker
 
 For macOS and Windows users: SAM local requires that the project directory (or any parent directory) is listed in Docker file sharing options.
 
-Verify that docker is working, and that you can run docker commands from the CLI (e.g. `docker ps`). You do not need to install/fetch/pull any containers - SAM Local will do it automatically as required. In Cloud9 IDE, you can execute the command in the terminal window in the bash terminal window at the bottom. 
+Verify that docker is working, and that you can run docker commands from the CLI (e.g. `docker ps`). You do not need to install/fetch/pull any containers - SAM Local will do it automatically as required. In Cloud9 IDE, you can execute the commands in the bash terminal window at the bottom of the IDE window. 
 
 
 #### AWS Cloud9, Windows, Linux, macOS with NPM [Recommended]
@@ -158,8 +158,10 @@ sam --version
 
 We also release the CLI as binaries that you can download and instantly use. You can find them under [Releases](https://github.com/awslabs/aws-sam-local/releases) in the SAM Local repo.
 
-
-#### Alternative Installation: Amazon Linux (EC2)
+<details>
+<summary><strong>
+#### Alternative Installation: Amazon Linux (EC2) (expand for details)
+</strong></summary>
 
 If you're unable to install SAM Local on your workstation, you may find it easier to use SAM Local on an Amazon Linux EC2 instance.   In this case, you will not be performing work locally on your laptop, instead you will connect remotely into an EC2 instance to perform editing and testing.
 
@@ -228,6 +230,7 @@ On your workstation, open a new terminal and run the following command.  In the 
 
    ![Bitvise Tunnel Config](images/bitvise-tunnel-config.png)
 
+</details>
 
 ## SAM Local Development
 
@@ -257,7 +260,7 @@ In this section, you will use SAM Local on your workstation to run the Unicorn A
 
    ![Cloud9 EC2 SecurityGroup Port](images/cloud9-ec2-securitygroup.png)
 
-1. If you are using AWS Cloud9 IDE, open a browser and enter `http://public-ec2-dns:3000/unicorns` in the address bar. Or if you are using other platforms, open a browser and enter `http://127.0.0.1:3000/unicorns` in the address bar.  Confirm that you see the output below:
+1. If you are using AWS Cloud9 IDE, open a browser and enter `http://ec2-###-##-##-###.compute-1.amazonaws.com:3000/unicorns` in the address bar. Or if you are using other platforms, open a browser and enter `http://127.0.0.1:3000/unicorns` in the address bar.  Confirm that you see the output below:
 
    ![Hello World in Browser](images/browser-hello-world.png)
 

@@ -293,6 +293,6 @@ To learn more about development with SAM Local, check out [AWS Documentation](ht
 
 ## Completion
 
-You have successfully performed local development and testing of a RESTful serverless API using the Serverless Application Model.  Please close the window running the `sam local start-api` command before preceding to the next module.
+You have successfully performed local development and testing of a RESTful serverless API using the Serverless Application Model.  Please close the window or ctl+c to terminate the `sam local start-api` process before preceding to the next module.
 
 In the next [Continuous Delivery Pipeline Module](../2_ContinuousDeliveryPipeline), you will learn how to setup deployment of that API into AWS and to automate this deployment process using AWS CodePipeline and AWS CodeBuild.

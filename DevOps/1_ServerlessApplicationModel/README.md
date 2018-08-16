@@ -109,7 +109,7 @@ If you're using the latest version of the Chrome, Firefox, or Safari web browser
 
 Now that the CodeCommit Git repository has been seeded with new source code, you will need to fetch the changes locally on to Cloud9 IDE so that you may modify the code.  Typically, this is accomplished using the `git pull` command, however for the workshop we have replaced the repository with a new history and different Git commands will be used.
 
-In Cloud9 IDE, run the commands on your local `uni-api` Git repository in the bash command window at the bottom panel:
+In Cloud9 IDE, run the commands on your local `uni-api` Git repository in the bash terminal window at the bottom:
 
 ```bash
 git fetch --all
@@ -128,7 +128,7 @@ To complete this module, you will need to install SAM Local.  If you already hav
 
 #### Prerequisites
 
-Running Serverless projects and functions locally with SAM Local requires Docker to be installed and running. SAM Local will use the `DOCKER_HOST` environment variable to contact the docker daemon.
+Running Serverless projects and functions locally with SAM Local requires Docker to be installed and running. SAM Local will use the `DOCKER_HOST` environment variable to contact the docker daemon. Thankfully, AWS Cloud9 IDE is preconfigured with Docker so you are all set. However, if you are using other platforms, follow instructions below to install and configure Docker.
 
  - macOS: [Docker for Mac](https://store.docker.com/editions/community/docker-ce-desktop-mac)
  - Windows: [Docker Toolbox](https://download.docker.com/win/stable/DockerToolbox.exe)
@@ -136,10 +136,10 @@ Running Serverless projects and functions locally with SAM Local requires Docker
 
 For macOS and Windows users: SAM local requires that the project directory (or any parent directory) is listed in Docker file sharing options.
 
-Verify that docker is working, and that you can run docker commands from the CLI (e.g. `docker ps`). You do not need to install/fetch/pull any containers - SAM Local will do it automatically as required.
+Verify that docker is working, and that you can run docker commands from the CLI (e.g. `docker ps`). You do not need to install/fetch/pull any containers - SAM Local will do it automatically as required. In Cloud9 IDE, you can execute the command in the terminal window in the bash terminal window at the bottom. 
 
 
-#### Windows, Linux, macOS with NPM [Recommended]
+#### AWS Cloud9, Windows, Linux, macOS with NPM [Recommended]
 
 The easiest way to install **`sam`** is to use [NPM](https://www.npmjs.com).
 
@@ -241,7 +241,7 @@ In this section, you will use SAM Local on your workstation to run the Unicorn A
    sam local start-api
    ```
    
-   If port forwarding from an EC2 developer instance, run the following command:
+   If port forwarding from an EC2 developer instance or Cloud9 IDE, run the following command:
 
    ```bash
    sam local start-api --host 0.0.0.0
@@ -253,14 +253,18 @@ In this section, you will use SAM Local on your workstation to run the Unicorn A
 
    ![start-api output](images/start-api-output.png)
 
-1. Open a browser and enter `http://127.0.0.1:3000/unicorns` in the address bar.  Confirm that you see the output below:
+1. If you are using AWS Cloud9 IDE, make sure port 3000 is opened on the EC2 instance security group that is backing that Cloud9 IDE. You will find the EC2 instance in the EC2 console below, note the Public DNS Name as you will need this to browse later.
+
+   ![Cloud9 EC2 SecurityGroup Port](images/cloud9-ec2-securitygroup.png)
+
+1. If you are using AWS Cloud9 IDE, open a browser and enter `http://public-ec2-dns:3000/unicorns` in the address bar. Or if you are using other platforms, open a browser and enter `http://127.0.0.1:3000/unicorns` in the address bar.  Confirm that you see the output below:
 
    ![Hello World in Browser](images/browser-hello-world.png)
 
 Congratulations!  You have successfully used SAM Local to start a local development environment.  Keep the window open that is running the `sam local start-api` command until this module is complete.
 
 Next, let's look at how you can use SAM Local to test changes to your API.
-
+ 
 ### Test code changes locally
 
 **Goal**: Update `app/list.js` to change the welcome message to `Hello re:Invent!`.  Remember, the local API Gateway supports hot-reloading of code changes.  There is no need to restart the `sam local start-api` process to see changes.

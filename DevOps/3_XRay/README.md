@@ -122,7 +122,7 @@ In order to tacke [Problem 1: Error Discovery Using X-Ray](#problem-1-error-disc
 
 Now that the CodeCommit Git repository has been seeded with new source code, you will need to fetch the changes locally so that you may modify the code.  Typically, this is accomplished using the `git pull` command, however for the workshop we have replaced the repository with a new history and different Git commands will be used.
 
-Using your preferred Git client, run the commands on your local **uni-api** Git repository:
+Using your preferred Git client or Cloud9 IDE, run the commands on your local **uni-api** Git repository:
 
 ```bash
 git fetch --all
@@ -272,14 +272,14 @@ HOW TO fix the bug and push code changes (expand for details)
 
 ### 2. Commit the change to local Git repository
 
-1. Using your Git client, add the local changes to the Git index, and commit with a message.  For example:
+1. Using your Git client or Cloud9 IDE, add the local changes to the Git index, and commit with a message.  For example:
 
     ```
     git add -u
     git commit -m "Fix bug"
     ```
 
-1. Using your Git client, push the Git repository updates to the origin.  For example:
+1. Using your Git client or Cloud9 IDE, push the Git repository updates to the origin.  For example:
 
     ```
     git push origin
@@ -425,14 +425,14 @@ HOW TO fix the code and push the code back up (expand for details)
 
 ### 2. Commit the change to local Git repository
 
-1. Using your Git client, add the local changes to the Git index, and commit with a message.  For example:
+1. Using your Git client or Cloud9 IDE, add the local changes to the Git index, and commit with a message.  For example:
 
     ```bash
     git add -u
     git commit -m "Remove delay"
     ```
 
-1. Using your Git client, push the Git repository updates to the origin.  For example:
+1. Using your Git client or Cloud9 IDE, push the Git repository updates to the origin.  For example:
 
     ```bash
     git push origin

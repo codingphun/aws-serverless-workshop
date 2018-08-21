@@ -103,7 +103,7 @@ CodeStar generates IAM Roles and Policies that control access to AWS resources. 
 
     ![Attach Policy](images/role1-6.png)
 
-1. The Role Summary will now include the **AWSCodePipelineCustomActionAccess**, **AWSCloudFormationReadOnlyAccess**, and **AWSLambdaRole** policies in the list of **Managed Policies**.
+1. The Role Summary will now include the **AWSCodePipelineCustomActionAccess**, **AWSCloudFormationReadOnlyAccess**, **AmazonDynamoDBFullAccess**, and **AWSLambdaRole** policies in the list of **Managed Policies**.
 
     ![Policy Attached](images/role1-7.png)
 

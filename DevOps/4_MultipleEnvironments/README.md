@@ -449,14 +449,14 @@ The `test_list_unicorns` integration test has failed!  Next, let's locate and fi
 
 ### 2. Commit the change to local Git repository
 
-1. Using your Git client, add the local changes to the Git index, and commit with a message.  For example:
+1. Using your Git client or Cloud9 IDE, add the local changes to the Git index, and commit with a message.  For example:
 
     ```
     git add -u
     git commit -m "Fix bug"
     ```
 
-1. Using your Git client, push the Git repository updates to the origin.  For example:
+1. Using your Git client or Cloud9 IDE, push the Git repository updates to the origin.  For example:
 
     ```
     git push origin

@@ -154,14 +154,14 @@ Now that you've updated the the SAM template with the changes, use Git to commit
 
 ### 2. Commit the change to local Git repository
 
-1. Using your Git client, add the local changes to the Git index, and commit with a message.  For example:
+1. Using your Git client or Cloud9 IDE, add the local changes to the Git index, and commit with a message.  For example:
 
     ```bash
     git add -u
     git commit -m "Add update function"
     ```
 
-1. Using your Git client, push the Git repository updates to the origin.  For example:
+1. Using your Git client or Cloud9 IDE, push the Git repository updates to the origin.  For example:
 
     ```bash
     git push origin
@@ -317,7 +317,7 @@ Having this testing framework in place ensures that the exact same set of steps 
 
 1. We have discovered that our nemesis, Chet, has disabled our unit tests! Why, Chet, why?! To fix this, uncomment the line that executes the `mocha` command so our unit tests will be run during the build.
 
-1. Using your Git client, add the local changes to the Git index, commit these changes with a message, and push our local changes to the repository. For example:
+1. Using your Git client or Cloud9 IDE, add the local changes to the Git index, commit these changes with a message, and push our local changes to the repository. For example:
 
     ```bash
     git add -u

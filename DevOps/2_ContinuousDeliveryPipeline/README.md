@@ -67,15 +67,17 @@ If you're using the latest version of the Chrome, Firefox, or Safari web browser
 
 ### 2. Fetch CodeCommit Git Repository
 
-Now that the CodeCommit Git repository has been seeded with new source code, you will need to fetch the changes locally so that you may modify the code.  Typically, this is accomplished using the `git pull` command, however for the workshop we have replaced the repository with a new history and different Git commands will be used.
+Now that the CodeCommit Git repository has been seeded with new source code, you will need to fetch the changes locally on to Cloud9 IDE so that you may modify the code.  Typically, this is accomplished using the `git pull` command, however for the workshop we have replaced the repository with a new history and different Git commands will be used.
 
-Using your preferred Git client, run the commands from your local **uni-api** directory:
+In Cloud9 IDE, run the commands on your local `uni-api` Git repository in the bash terminal window at the bottom of the IDE window:
 
 ```bash
 git fetch --all
 git reset --hard origin/master
 ```
 
+  ![CloudFormation Stack Creation Complete](images/seed-repository-2b.png)
+  
 Congratulations, your environment setup is complete!
 
 
